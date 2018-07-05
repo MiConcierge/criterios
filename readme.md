@@ -43,6 +43,8 @@ Asimismo, en features complejas es conveniente que todos se sumen para testear y
 ####  TEST, TEST, TEST
 Chrome no es el único browser que existe. Desde el costado visual, nuestros estándares de compatibilidad son muy simples y sólo lleva unos minutos verificar que el funcionamiento de una interfaz es apto para la mayoría de los usuarios. A medida que aumenta la complejidad del proyecto, es recomendable incorporar unit tests y visual regression tests. Los tests no son tanto para ver si lo que acabás de terminar está bien. Es para enterarte si lo rompiste después.
 
+Docuementa el comportamiento de tus pruebas unitarias, consulta que el feature que estas haciendo resulta en especificamente el trabajo que necesitas que haga. regularmente discutelas para evitar tener cabos sueltos y siempre que te presenten alguna duda de porque algo funciona como lo hace, respaldate por tus pruebas escritas.
+
 Testeá siempre antes de enviar un entregable.
 
 En desktop, como política general soportamos los browsers principales (Chrome, Firefox, Edge, Safari). Asimismo, todos nuestros sites son responsive con soporte mobile por defecto.
@@ -55,6 +57,8 @@ Además de esto, van las consideraciones que tomamos para todo proyecto.
 
 #### USÁ GIT FLOW
 Git Flow es una metodología que nos permite trabajar con mayor comodidad en un repositorio. Dale una leída al documento, pero lo que tenés que saber es lo siguiente: Usá siempre branches para nuevas features y fixes (feature-redesign), los cuales se mergean a dev para testearlos y recién una vez testeados los mandamos a master.
+
+Despliega todas las pruebas que deban ser necesarias, pero las revisiones por regla no tocan la integracion a producion, siempre pide la rama de desarrollo y presenta a travez de ella todos los features que quieras presentar
 
 Desplegamos una nueva version cada Jueves despues de la hora de la comida (o cuando todos hayan comido).
 El flujo para el deployment, se llevara a cabo ejecutando todas las pruebas necesesarias del proyecto, una vez que todas hayan sucedido, genera los pull request correspondientes para hacer una code review y finalmente terminar en distribucion.
