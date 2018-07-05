@@ -5,7 +5,7 @@
 Como en cualquier flujo de trabajo, todas y cada una de las partes involucradas en los diferentes procesos son fundamentales y, por ende, la falla de alguna de ellas tiene un impacto directo en el resto.
 Para evitar inconvenientes y malos entendidos decidimos crear esta suerte de guía rápida que enumera recomendaciones, consejos, sugerencias y algún que otro pedido puntual, esperando optimizar un curso de acción que debería funcionar de manera aceitada asegurando eficiencia en el desempeño y buenos resultados.
 No obstante, no es la intención de esta guía delimitar formas de actuar, ni tampoco moldear comportamientos.
-Queremos que quede claro que podés trabajar de la manera que te resulte más práctica y útil. Nos interesa que te sientas cómodo porque eres una parte importante de nuestro equipo de trabajo y sabemos que tu aporte es sumamente valioso.
+Queremos que quede claro que puedes trabajar de la manera que te resulte más práctica y útil. Nos interesa que te sientas cómodo porque eres una parte importante de nuestro equipo de trabajo y sabemos que tu aporte es sumamente valioso.
 Sin embargo, sea cual sea la forma en que elijas desempeñar tus actividades, vamos a necesitar que no pases por alto ciertas pautas.
 Simplemente con eso, nos estarás ayudando de manera significativa a mantener (e inclusive hacer crecer) el prestigio con esfuerzo ya consolidado.
 
@@ -110,6 +110,9 @@ Por último, en algunos casos, se realiza una compilación de todos los elemento
 - Optimizar el peso de los archivos, eliminando todos aquellos elementos que no tengan razón de ser en el diseño final aprobado.
 - Prestá particular atención para documentar animaciones, estados de hover y active para links, comportamiento del layout para diversos monitores (aclará qué tamaño tiene el diseño, si ocupa toda la pantalla o no, qué componentes quedan fijos, etc), y verificá los efectos a usar junto con un desarrollador para asegurarte de que puedan ser implementados correctamente.
 
+## Links de ayuda
+- Guia de [Javascript MiConcierge](https://github.com/MiConcierge/javascript)
+
 ## How do I contribute?
 
-Contributions are welcome! Check out the [issues](https://github.com/MiConcierge/javascript/issues) or the [PRs](https://github.com/MiConcierge/javascript/pulls), and make your own if you want something that you don't see there.
+Todas las contribuciones son bienvenidas! Revisa los [issues](https://github.com/MiConcierge/javascript/issues) y las [PRs](https://github.com/MiConcierge/javascript/pulls), y crea la tuya proponiendo algo que creas que deba ser conciderado o necesario.
