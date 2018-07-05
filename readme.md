@@ -59,6 +59,8 @@ Git Flow es una metodología que nos permite trabajar con mayor comodidad en un 
 Desplegamos una nueva version cada Jueves despues de la hora de la comida (o cuando todos hayan comido).
 El flujo para el deployment, se llevara a cabo ejecutando todas las pruebas necesesarias del proyecto, una vez que todas hayan sucedido, genera los pull request correspondientes para hacer una code review y finalmente terminar en distribucion.
 
+La rama de distribucion se setea como la rama de staging ya que nos permite dejar a master como un backup de desarrollo, si algo sale mal, master es `The single source of truth`
+
 #### COMENTÁ LAS COSAS "RARAS"
 Uno siempre termina usando un hack para resolver alguna issue de compatibilidad, o bien termina implementando una feature compleja de corrido sin escribir un sólo comment. Dejá un comentario explicando brevemente la solución o el porqué de la misma para evitar traumas futuros. Si no lo hacés, seguramente te des cuenta de que el código que escribiste es confuso en el momento de la code review.
 
@@ -107,3 +109,7 @@ Por último, en algunos casos, se realiza una compilación de todos los elemento
 - Ordenar prolijamente los elementos que hacen a los diferentes archivos en carpetas que identifiquen propiamente cada una de las secciones diseñadas. Los nombres de los elementos/carpetas deberán estar en inglés.
 - Optimizar el peso de los archivos, eliminando todos aquellos elementos que no tengan razón de ser en el diseño final aprobado.
 - Prestá particular atención para documentar animaciones, estados de hover y active para links, comportamiento del layout para diversos monitores (aclará qué tamaño tiene el diseño, si ocupa toda la pantalla o no, qué componentes quedan fijos, etc), y verificá los efectos a usar junto con un desarrollador para asegurarte de que puedan ser implementados correctamente.
+
+## How do I contribute?
+
+Contributions are welcome! Check out the [issues](https://github.com/MiConcierge/javascript/issues) or the [PRs](https://github.com/MiConcierge/javascript/pulls), and make your own if you want something that you don't see there.
