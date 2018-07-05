@@ -61,6 +61,9 @@ El flujo para el deployment, se llevara a cabo ejecutando todas las pruebas nece
 
 La rama de distribucion se setea como la rama de staging ya que nos permite dejar a master como un backup de desarrollo, si algo sale mal, master es `The single source of truth`
 
+Todos los bugs o fixes de emergencia, obtienen la mas alta prioridad y hay que repararlos, pero tienen que seguir un flow natural,
+en este caso, parte de la rama de staging (que deberia ser la que esta en production) y parte en una nueva rama segun el gitflow, llamese `fix-foo-bar`; una vez solucionado crea el respectivo pull request, comienza la code review para saber que se soluciono lo adecuado.
+
 #### COMENTÁ LAS COSAS "RARAS"
 Uno siempre termina usando un hack para resolver alguna issue de compatibilidad, o bien termina implementando una feature compleja de corrido sin escribir un sólo comment. Dejá un comentario explicando brevemente la solución o el porqué de la misma para evitar traumas futuros. Si no lo hacés, seguramente te des cuenta de que el código que escribiste es confuso en el momento de la code review.
 
