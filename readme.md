@@ -68,6 +68,18 @@ La rama de distribucion se setea como la rama de staging ya que nos permite deja
 Todos los bugs o fixes de emergencia, obtienen la mas alta prioridad y hay que repararlos, pero tienen que seguir un flow natural,
 en este caso, parte de la rama de staging (que deberia ser la que esta en production) y parte en una nueva rama segun el gitflow, llamese `fix-foo-bar`; una vez solucionado crea el respectivo pull request, comienza la code review para saber que se soluciono lo adecuado.
 
+### Server Flow
+- Master nunca se toca, se sincroniza con staging una vez que staging sea estable, si algo sale mal, puedes hacer roll back y/o cambiar master
+- Desplegar en staging un día específico y junto con el máster
+- si hay un bug en producción, cambiar de rama del bug (master), crear una rama fix, e integrar los fixes a las ramas de desarrollo y máster
+- server máster es para los clientes, staging donde ocurre mucho (prueba Daniel y hacen demos a clientes), dev es desarrollo interno (se pushea constantemente al día)
+
+### Client Flow (Mobile y Web)
+- Master nunca se toca, se sincroniza con staging una vez que staging sea estable, si algo sale mal, puedes hacer roll back y/o cambiar master
+- Desplegar en staging un día específico y junto con el máster
+- si hay un bug en producción, cambiar de rama del bug (master), crear una rama fix, e integrar los fixes a las ramas de desarrollo y máster
+- la clave de versión (-internal) siempre apunta a dev, alpha a staging y beta >= master (mismas reglas de pusheo de server)
+
 #### COMENTÁ LAS COSAS "RARAS"
 Uno siempre termina usando un hack para resolver alguna issue de compatibilidad, o bien termina implementando una feature compleja de corrido sin escribir un sólo comment. Dejá un comentario explicando brevemente la solución o el porqué de la misma para evitar traumas futuros. Si no lo hacés, seguramente te des cuenta de que el código que escribiste es confuso en el momento de la code review.
 
