@@ -9,7 +9,6 @@ Queremos que quede claro que puedes trabajar de la manera que te resulte más pr
 Sin embargo, sea cual sea la forma en que elijas desempeñar tus actividades, vamos a necesitar que no pases por alto ciertas pautas.
 Simplemente con eso, nos estarás ayudando de manera significativa a mantener (e inclusive hacer crecer) el prestigio con esfuerzo ya consolidado.
 
-
 ## Desarrollo de interfaz
 
 Como desarrollador, tu principal responsabilidad es la de implementar la interfaz final sobre la cual van a interactuar los usuarios. Esto no es simplemente traducir un Estilo a la technologia, sino que es pulir la interacción con el usuario y establecer los criterios necesarios para que la UX sea lo mejor posible, creando todo desde las adaptaciones responsive hasta esos pequeños detalles (como animaciones sutiles y una excelente performance) que hacen que una interfaz pase de muy buena a excelente.
@@ -70,20 +69,20 @@ en este caso, parte de la rama de staging (que deberia ser la que esta en produc
 
 ### Server Flow
 - Master nunca se toca, se sincroniza con staging una vez que staging sea estable, si algo sale mal, puedes hacer roll back y/o cambiar master
-- Desplegar en staging un día específico y junto con el máster
-- si hay un bug en producción, cambiar de rama del bug (master), crear una rama fix, e integrar los fixes a las ramas de desarrollo y máster
-- server máster es para los clientes, staging donde ocurre mucho (prueba Daniel y hacen demos a clientes), dev es desarrollo interno (se pushea constantemente al día)
+- La integracion continua de las tareas que llegan al punto de aceptacion, se integran a la rama `staging` para ser desplegados en esta misma y se respalda la version anterior a `master`
+- si hay un bug en producción, cambiar de la rama donde este ocurriendo la accion (`staging`), crear una rama fix, e integrar los fixes a las ramas de desarrollo y final mente abre un `pull-request` a la rama de produccion
+- El server de produccion (staging) es para los clientes, ahi todo debe funcionar bien, el server staging (dev) es el server de Testing y demos a los clientes. Dev es desarrollo interno
 
 ### Client Flow (Mobile y Web)
 - Master nunca se toca, se sincroniza con staging una vez que staging sea estable, si algo sale mal, puedes hacer roll back y/o cambiar master
-- Desplegar en staging un día específico y junto con el máster
-- si hay un bug en producción, cambiar de rama del bug (master), crear una rama fix, e integrar los fixes a las ramas de desarrollo y máster
+- La integracion continua de las tareas que llegan al punto de aceptacion, se integran a la rama `staging` para ser desplegados en esta misma y se respalda la version anterior a `master`
+- si hay un bug en producción, cambiar de la rama donde este ocurriendo la accion (`staging`), crear una rama fix, e integrar los fixes a las ramas de desarrollo y final mente abre un `pull-request` a la rama de produccion
 - la clave de versión (-internal) siempre apunta a dev, alpha a staging y beta >= master (mismas reglas de pusheo de server)
 
 #### COMENTÁ LAS COSAS "RARAS"
 Uno siempre termina usando un hack para resolver alguna issue de compatibilidad, o bien termina implementando una feature compleja de corrido sin escribir un sólo comment. Dejá un comentario explicando brevemente la solución o el porqué de la misma para evitar traumas futuros. Si no lo hacés, seguramente te des cuenta de que el código que escribiste es confuso en el momento de la code review.
 
-#### PEDÍ LA OPINIÓN DE OTRO DEV
+#### PIDE LA OPINIÓN DE OTRO DEV
 A uno siempre se le escapan cosas o termina haciendo cosas por impulso. Siempre está bueno consultar con otra persona cada tanto para que le pegue un vistazo al trabajo a medida que va avanzando. Es algo que sólo lleva unos minutos y eleva notablemente la calidad del trabajo final, ya que terminás tomando experiencia prestada de alguien que por ahí ya se topó con el mismo problema antes.
 
 ## Diseño e Ideas
